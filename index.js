@@ -49,7 +49,7 @@ var gulp = require('gulp'),
                 exec(
                     '(cd <%= options.dir(file.path) %> ' +
                         commandSeparator +
-                        ' npm install --loglevel=error) ' +
+                        ' npm install --loglevel=error --silent) ' +
                         commandSeparator +
                         ' echo Installed for: <%= file.path %> \n',
                     options
